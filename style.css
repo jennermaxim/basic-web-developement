@@ -59,6 +59,8 @@ body {
   margin: 10px;
   background-color: blueviolet;
   border-radius: 10px;
+  height: 100px;
+  overflow: hidden;
 }
 
 .main .blog .blog-content .content img {
@@ -84,15 +86,15 @@ body {
   border-radius: 10px;
 }
 
-.main .footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.main .footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
-.main .footer a{
-    color: yellow;
+.main .footer a {
+  color: yellow;
 }
 
 @media screen and (max-width: 1000px) {
@@ -119,10 +121,12 @@ body {
   }
   .main .blog .blog-img {
     width: 100%;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
   }
 
   .main .blog .blog-content {
     width: 100%;
+    padding: 0;
   }
 }
