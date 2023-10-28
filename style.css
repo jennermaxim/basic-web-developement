@@ -103,11 +103,6 @@ body {
   .main .grid .grid-child {
     background-color: red;
   }
-
-  .main .grid .last{
-    width: 500px;
-    margin: 10px;
-  }
 }
 
 @media screen and (max-width: 600px) {
