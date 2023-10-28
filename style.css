@@ -1,0 +1,127 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main .header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.main .header .right-nav ul {
+  display: flex;
+}
+
+.main .header .right-nav ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.main .header .right-nav ul a:hover {
+  background-color: #bbb;
+  color: black;
+}
+
+.main img {
+  width: 100%;
+  height: calc(100vh - 200px);
+}
+
+.main .blog {
+  display: flex;
+  align-items: center;
+}
+
+.main .blog .blog-img {
+  width: 60%;
+  padding: 10px;
+}
+
+.main .blog .blog-content {
+  width: 40%;
+  padding: 10px;
+  height: 310px;
+  overflow-y: auto;
+  background-color: aquamarine;
+}
+
+.main .blog .blog-content .content {
+  display: flex;
+  margin: 10px;
+  background-color: blueviolet;
+  border-radius: 10px;
+}
+
+.main .blog .blog-content .content img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px 0 0 10px;
+}
+
+.main .blog .blog-content .content .text {
+  padding-left: 10px;
+}
+
+.main .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+}
+
+.main .grid .grid-child {
+  margin: 10px;
+  background-color: yellow;
+  padding: 10px;
+}
+
+.main .footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.main .footer a{
+    color: yellow;
+}
+
+@media screen and (max-width: 1000px) {
+  .main .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+  }
+  .main .grid .grid-child {
+    background-color: red;
+  }
+
+  .main .grid .last{
+    width: 500px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .main .grid .grid-child {
+    background-color: blue;
+  }
+  .main .blog {
+    display: block;
+    align-items: center;
+  }
+  .main .blog .blog-img {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main .blog .blog-content {
+    width: 100%;
+  }
+}
