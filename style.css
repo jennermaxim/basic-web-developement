@@ -35,11 +35,15 @@ body {
 .main .blog {
   display: flex;
   align-items: center;
+  margin: 10px;
+  justify-content: center;
 }
 
 .main .blog .blog-img {
   width: 60%;
-  padding: 10px;
+  height: 330px;
+  overflow: hidden;
+  margin: 10px;
 }
 
 .main .blog .blog-content {
@@ -70,12 +74,14 @@ body {
 .main .grid {
   display: grid;
   grid-template-columns: repeat(4, 300px);
+  margin: 10px;
 }
 
 .main .grid .grid-child {
   margin: 10px;
   background-color: yellow;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .main .footer{
